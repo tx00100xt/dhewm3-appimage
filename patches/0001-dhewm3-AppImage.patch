@@ -1,0 +1,111 @@
+--- a/neo/framework/Common.cpp	2024-02-23 01:01:11.254605383 +0300
++++ b/neo/framework/Common.cpp	2024-02-23 00:57:15.793467324 +0300
+@@ -2883,6 +2883,95 @@
+ 
+ #endif // UINTPTR_MAX defined
+ 
++#include <unistd.h>
++#include <pwd.h>
++
++static int AppImage_TestFile(const char *_home_TestFile)
++{
++	char _fnm_home_TestFile[4096];
++	struct passwd *pw = getpwuid(getuid());
++	const char *_homedir = pw->pw_dir;
++	strcpy(_fnm_home_TestFile, _homedir);
++	_fnm_home_TestFile[strlen(_homedir)] = 0x00;
++	strncat (_fnm_home_TestFile, _home_TestFile, strlen(_home_TestFile));
++	printf("Test file: %s\n", (const char *) _fnm_home_TestFile);
++	if( access((const char *) _fnm_home_TestFile, F_OK) == 0 ) {
++		printf("Found path: %s\n", (const char *) _fnm_home_TestFile);
++		return 1;
++	} else {
++		printf("ERROR: Game data not found!\n");
++		return 0;
++	}
++ 	return 1;
++}
++
++static void AppImage_Window(void)
++{
++ 
++	//typedef enum { false, true } BOOL;
++
++	if(SDL_Init(SDL_INIT_VIDEO) != 0 ) {
++		printf("SDL_Init Error: %s\n",SDL_GetError());
++	}
++
++	SDL_Window *sdl_window = SDL_CreateWindow("Dhewm3 AppImage",
++        SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, 0);
++	if(sdl_window == NULL) {
++		printf("SDL_Window Error: %s\n",SDL_GetError());
++	}
++ 
++	SDL_Renderer *sdl_renderer = SDL_CreateRenderer(sdl_window, -1, 0);
++	if(sdl_renderer == NULL) {
++		printf("SDL_Renderer Error: %s\n",SDL_GetError());
++	}
++
++	char path_with_bmp[4096]; 
++	char *path = SDL_GetBasePath();
++   strcpy(path_with_bmp, path);
++	strncat(path_with_bmp, "dhewm3.bmp", 10);
++   printf("Path to Texture: %s\n", (const char*)path_with_bmp);
++
++	SDL_Surface *sdl_image = SDL_LoadBMP((const char*)path_with_bmp);
++	if(sdl_image == NULL) {
++		printf("SDL_Surface Error: %s\n",SDL_GetError());
++	}
++	SDL_Texture *sdl_texture = SDL_CreateTextureFromSurface(sdl_renderer, sdl_image);
++	if(sdl_texture == NULL) {
++		printf("SDL_Texture Error: %s\n",SDL_GetError());
++	}
++
++	bool is_running = true;
++	SDL_Event sdl_event; // instantiate event class, to register events
++
++	while (is_running)
++	{
++		SDL_WaitEvent(&sdl_event);
++		switch (sdl_event.type)
++		{
++		case SDL_KEYDOWN:
++			if (sdl_event.key.keysym.sym == SDLK_ESCAPE) {
++				is_running = false;
++				break;
++			}
++		case SDL_WINDOWEVENT:
++			if (sdl_event.window.event == SDL_WINDOWEVENT_CLOSE) {
++				is_running = false;
++				break;
++			}
++		}
++		SDL_RenderCopy(sdl_renderer, sdl_texture, NULL, NULL); // copy texture to output device
++		SDL_RenderPresent(sdl_renderer); // commit texture to vram
++	}
++
++	// clear and exit
++	SDL_DestroyTexture(sdl_texture);
++	SDL_FreeSurface(sdl_image);
++	SDL_DestroyRenderer(sdl_renderer);
++	SDL_DestroyWindow(sdl_window);
++	SDL_Quit();
++	return;
++}
++
+ /*
+ =================
+ idCommonLocal::Init
+@@ -2896,6 +2978,12 @@
+ 		           (int)D3_SIZEOFPTR, (int)sizeof(void*) );
+ 	}
+ 
++	int appimage_test_pak0 = AppImage_TestFile("/.local/share/dhewm3/base/pak000.pk4");
++	if( appimage_test_pak0 == 0 ) {
++		AppImage_Window();
++		exit(1);
++	}
++
+ 	if(checkForHelp(argc, argv))
+ 	{
+ 		// game has been started with --help (or similar), usage message has been shown => quit

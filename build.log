@@ -1,0 +1,544 @@
+linuxdeploy version 1-alpha (git commit ID 2b73a21), GitHub actions build 261 built on 2024-02-01 01:03:24 UTC
+
+-- Creating basic AppDir structure -- 
+Creating directory AppDir/usr/bin/ 
+Creating directory AppDir/usr/lib/ 
+Creating directory AppDir/usr/share/applications/ 
+Creating directory AppDir/usr/share/icons/hicolor/ 
+Creating directory AppDir/usr/share/icons/hicolor/16x16/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/32x32/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/64x64/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/128x128/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/256x256/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/scalable/apps/ 
+
+-- Deploying dependencies for existing files in AppDir -- 
+Deploying dependencies for ELF file AppDir/usr/bin/dhewm3 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libopenal.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libopenal.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libcurl-nss.so.4
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libcurl-nss.so.4 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libz.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libpthread.so.0 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libdl.so.2 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libstdc++.so.6 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libm.so.6 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libgcc_s.so.1 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libc.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libsndio.so.6.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libsndio.so.6.1 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/librt.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libnghttp2.so.14
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libnghttp2.so.14 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libidn2.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libidn2.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/librtmp.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/librtmp.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libpsl.so.5
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libpsl.so.5 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libnss3.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libnss3.so 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libssl3.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libssl3.so 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libnspr4.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libnspr4.so 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libldap_r-2.4.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libldap_r-2.4.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/liblber-2.4.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/liblber-2.4.so.2 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libasound.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libpulse.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libpulse.so.0 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libX11.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXext.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXext.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXcursor.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXcursor.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXinerama.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXinerama.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXi.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXi.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXrandr.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXrandr.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXss.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXss.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libwayland-client.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libwayland-client.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0 
+Deploying shared library /lib/x86_64-linux-gnu/libbsd.so.0
+Deploying copyright files for file /lib/x86_64-linux-gnu/libbsd.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libunistring.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libunistring.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libgnutls.so.30
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libgnutls.so.30 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libhogweed.so.4
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libhogweed.so.4 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libnettle.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libnettle.so.6 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libgmp.so.10 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libnssutil3.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libnssutil3.so 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libplc4.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libplc4.so 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libplds4.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libplds4.so 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libkrb5.so.3
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libkrb5.so.3 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libk5crypto.so.3
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libk5crypto.so.3 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libcom_err.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libkrb5support.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libkrb5support.so.0 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libresolv.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libsasl2.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libsasl2.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libgssapi.so.3
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libgssapi.so.3 
+Deploying shared library /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-11.1.so
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-11.1.so 
+Deploying shared library /lib/x86_64-linux-gnu/libdbus-1.so.3
+Deploying copyright files for file /lib/x86_64-linux-gnu/libdbus-1.so.3 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libxcb.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXrender.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXrender.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXfixes.so.3
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXfixes.so.3 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libffi.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libffi.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libp11-kit.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libp11-kit.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libtasn1.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libtasn1.so.6 
+Deploying shared library /lib/x86_64-linux-gnu/libkeyutils.so.1
+Deploying copyright files for file /lib/x86_64-linux-gnu/libkeyutils.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libheimntlm.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libheimntlm.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libkrb5.so.26
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libkrb5.so.26 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libasn1.so.8
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libasn1.so.8 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libhcrypto.so.4
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libhcrypto.so.4 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libroken.so.18
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libroken.so.18 
+Deploying shared library /lib/x86_64-linux-gnu/libsystemd.so.0
+Deploying copyright files for file /lib/x86_64-linux-gnu/libsystemd.so.0 
+Deploying shared library /lib/x86_64-linux-gnu/libwrap.so.0
+Deploying copyright files for file /lib/x86_64-linux-gnu/libwrap.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libsndfile.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libsndfile.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libasyncns.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libasyncns.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXau.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXau.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXdmcp.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXdmcp.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libwind.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libwind.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libheimbase.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libheimbase.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libhx509.so.5
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libhx509.so.5 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libsqlite3.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 
+Deploying shared library /lib/x86_64-linux-gnu/libcrypt.so.1
+Deploying copyright files for file /lib/x86_64-linux-gnu/libcrypt.so.1 
+Deploying shared library /lib/x86_64-linux-gnu/liblzma.so.5
+Deploying copyright files for file /lib/x86_64-linux-gnu/liblzma.so.5 
+Deploying shared library /usr/lib/x86_64-linux-gnu/liblz4.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/liblz4.so.1 
+Deploying shared library /lib/x86_64-linux-gnu/libgcrypt.so.20
+Deploying copyright files for file /lib/x86_64-linux-gnu/libgcrypt.so.20 
+Deploying shared library /lib/x86_64-linux-gnu/libnsl.so.1
+Deploying copyright files for file /lib/x86_64-linux-gnu/libnsl.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libFLAC.so.8
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libFLAC.so.8 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libogg.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libogg.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libvorbis.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libvorbis.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libgpg-error.so.0 
+Deploying dependencies for ELF file AppDir/usr/bin/base.so 
+Deploying dependencies for ELF file AppDir/usr/bin/d3xp.so 
+
+-- Deploying executables -- 
+Deploying executable AppDir/usr/bin/dhewm3 
+WARNING: Could not find copyright files for file AppDir/usr/bin/dhewm3 using dpkg-query 
+Deploying dependencies for ELF file AppDir/usr/bin/dhewm3 
+
+-- Copying files into AppDir -- 
+Copying file AppDir/usr/bin/dhewm3 to AppDir/usr/bin/dhewm3 
+Copying file /lib/x86_64-linux-gnu/libbsd.so.0 to AppDir/usr/lib/libbsd.so.0 
+Copying file /lib/x86_64-linux-gnu/libcrypt.so.1 to AppDir/usr/lib/libcrypt.so.1 
+Copying file /lib/x86_64-linux-gnu/libdbus-1.so.3 to AppDir/usr/lib/libdbus-1.so.3 
+Copying file /lib/x86_64-linux-gnu/libgcrypt.so.20 to AppDir/usr/lib/libgcrypt.so.20 
+Copying file /lib/x86_64-linux-gnu/libkeyutils.so.1 to AppDir/usr/lib/libkeyutils.so.1 
+Copying file /lib/x86_64-linux-gnu/liblzma.so.5 to AppDir/usr/lib/liblzma.so.5 
+Copying file /lib/x86_64-linux-gnu/libnsl.so.1 to AppDir/usr/lib/libnsl.so.1 
+Copying file /lib/x86_64-linux-gnu/libsystemd.so.0 to AppDir/usr/lib/libsystemd.so.0 
+Copying file /lib/x86_64-linux-gnu/libwrap.so.0 to AppDir/usr/lib/libwrap.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libFLAC.so.8 to AppDir/usr/lib/libFLAC.so.8 
+Copying file /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0 to AppDir/usr/lib/libSDL2-2.0.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libXau.so.6 to AppDir/usr/lib/libXau.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXcursor.so.1 to AppDir/usr/lib/libXcursor.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libXdmcp.so.6 to AppDir/usr/lib/libXdmcp.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXext.so.6 to AppDir/usr/lib/libXext.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXfixes.so.3 to AppDir/usr/lib/libXfixes.so.3 
+Copying file /usr/lib/x86_64-linux-gnu/libXi.so.6 to AppDir/usr/lib/libXi.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXinerama.so.1 to AppDir/usr/lib/libXinerama.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libXrandr.so.2 to AppDir/usr/lib/libXrandr.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/libXrender.so.1 to AppDir/usr/lib/libXrender.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libXss.so.1 to AppDir/usr/lib/libXss.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1 to AppDir/usr/lib/libXxf86vm.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libasn1.so.8 to AppDir/usr/lib/libasn1.so.8 
+Copying file /usr/lib/x86_64-linux-gnu/libasyncns.so.0 to AppDir/usr/lib/libasyncns.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libcurl-nss.so.4 to AppDir/usr/lib/libcurl-nss.so.4 
+Copying file /usr/lib/x86_64-linux-gnu/libffi.so.6 to AppDir/usr/lib/libffi.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libgnutls.so.30 to AppDir/usr/lib/libgnutls.so.30 
+Copying file /usr/lib/x86_64-linux-gnu/libgssapi.so.3 to AppDir/usr/lib/libgssapi.so.3 
+Copying file /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2 to AppDir/usr/lib/libgssapi_krb5.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/libhcrypto.so.4 to AppDir/usr/lib/libhcrypto.so.4 
+Copying file /usr/lib/x86_64-linux-gnu/libheimbase.so.1 to AppDir/usr/lib/libheimbase.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libheimntlm.so.0 to AppDir/usr/lib/libheimntlm.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libhogweed.so.4 to AppDir/usr/lib/libhogweed.so.4 
+Copying file /usr/lib/x86_64-linux-gnu/libhx509.so.5 to AppDir/usr/lib/libhx509.so.5 
+Copying file /usr/lib/x86_64-linux-gnu/libidn2.so.0 to AppDir/usr/lib/libidn2.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libk5crypto.so.3 to AppDir/usr/lib/libk5crypto.so.3 
+Copying file /usr/lib/x86_64-linux-gnu/libkrb5.so.26 to AppDir/usr/lib/libkrb5.so.26 
+Copying file /usr/lib/x86_64-linux-gnu/libkrb5.so.3 to AppDir/usr/lib/libkrb5.so.3 
+Copying file /usr/lib/x86_64-linux-gnu/libkrb5support.so.0 to AppDir/usr/lib/libkrb5support.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/liblber-2.4.so.2 to AppDir/usr/lib/liblber-2.4.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/libldap_r-2.4.so.2 to AppDir/usr/lib/libldap_r-2.4.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/liblz4.so.1 to AppDir/usr/lib/liblz4.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libnettle.so.6 to AppDir/usr/lib/libnettle.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libnghttp2.so.14 to AppDir/usr/lib/libnghttp2.so.14 
+Copying file /usr/lib/x86_64-linux-gnu/libnspr4.so to AppDir/usr/lib/libnspr4.so 
+Copying file /usr/lib/x86_64-linux-gnu/libnss3.so to AppDir/usr/lib/libnss3.so 
+Copying file /usr/lib/x86_64-linux-gnu/libnssutil3.so to AppDir/usr/lib/libnssutil3.so 
+Copying file /usr/lib/x86_64-linux-gnu/libogg.so.0 to AppDir/usr/lib/libogg.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libopenal.so.1 to AppDir/usr/lib/libopenal.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libp11-kit.so.0 to AppDir/usr/lib/libp11-kit.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libplc4.so to AppDir/usr/lib/libplc4.so 
+Copying file /usr/lib/x86_64-linux-gnu/libplds4.so to AppDir/usr/lib/libplds4.so 
+Copying file /usr/lib/x86_64-linux-gnu/libpsl.so.5 to AppDir/usr/lib/libpsl.so.5 
+Copying file /usr/lib/x86_64-linux-gnu/libpulse.so.0 to AppDir/usr/lib/libpulse.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libroken.so.18 to AppDir/usr/lib/libroken.so.18 
+Copying file /usr/lib/x86_64-linux-gnu/librtmp.so.1 to AppDir/usr/lib/librtmp.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libsasl2.so.2 to AppDir/usr/lib/libsasl2.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/libsndfile.so.1 to AppDir/usr/lib/libsndfile.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libsndio.so.6.1 to AppDir/usr/lib/libsndio.so.6.1 
+Copying file /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 to AppDir/usr/lib/libsqlite3.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libssl3.so to AppDir/usr/lib/libssl3.so 
+Copying file /usr/lib/x86_64-linux-gnu/libtasn1.so.6 to AppDir/usr/lib/libtasn1.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libunistring.so.2 to AppDir/usr/lib/libunistring.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/libvorbis.so.0 to AppDir/usr/lib/libvorbis.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2 to AppDir/usr/lib/libvorbisenc.so.2 
+Copying file /usr/lib/x86_64-linux-gnu/libwayland-client.so.0 to AppDir/usr/lib/libwayland-client.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0 to AppDir/usr/lib/libwayland-cursor.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1 to AppDir/usr/lib/libwayland-egl.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libwind.so.0 to AppDir/usr/lib/libwind.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0 to AppDir/usr/lib/libxkbcommon.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-11.1.so to AppDir/usr/lib/libpulsecommon-11.1.so 
+Copying file /usr/share/doc/libasn1-8-heimdal/copyright to AppDir/usr/share/doc/libasn1-8-heimdal/copyright 
+Copying file /usr/share/doc/libasyncns0/copyright to AppDir/usr/share/doc/libasyncns0/copyright 
+Copying file /usr/share/doc/libbsd0/copyright to AppDir/usr/share/doc/libbsd0/copyright 
+Copying file /usr/share/doc/libc6/copyright to AppDir/usr/share/doc/libc6/copyright 
+Copying file /usr/share/doc/libcurl3-nss/copyright to AppDir/usr/share/doc/libcurl3-nss/copyright 
+Copying file /usr/share/doc/libdbus-1-3/copyright to AppDir/usr/share/doc/libdbus-1-3/copyright 
+Copying file /usr/share/doc/libffi6/copyright to AppDir/usr/share/doc/libffi6/copyright 
+Copying file /usr/share/doc/libflac8/copyright to AppDir/usr/share/doc/libflac8/copyright 
+Copying file /usr/share/doc/libgcrypt20/copyright to AppDir/usr/share/doc/libgcrypt20/copyright 
+Copying file /usr/share/doc/libgnutls30/copyright to AppDir/usr/share/doc/libgnutls30/copyright 
+Copying file /usr/share/doc/libgssapi-krb5-2/copyright to AppDir/usr/share/doc/libgssapi-krb5-2/copyright 
+Copying file /usr/share/doc/libgssapi3-heimdal/copyright to AppDir/usr/share/doc/libgssapi3-heimdal/copyright 
+Copying file /usr/share/doc/libhcrypto4-heimdal/copyright to AppDir/usr/share/doc/libhcrypto4-heimdal/copyright 
+Copying file /usr/share/doc/libheimbase1-heimdal/copyright to AppDir/usr/share/doc/libheimbase1-heimdal/copyright 
+Copying file /usr/share/doc/libheimntlm0-heimdal/copyright to AppDir/usr/share/doc/libheimntlm0-heimdal/copyright 
+Copying file /usr/share/doc/libhogweed4/copyright to AppDir/usr/share/doc/libhogweed4/copyright 
+Copying file /usr/share/doc/libhx509-5-heimdal/copyright to AppDir/usr/share/doc/libhx509-5-heimdal/copyright 
+Copying file /usr/share/doc/libidn2-0/copyright to AppDir/usr/share/doc/libidn2-0/copyright 
+Copying file /usr/share/doc/libk5crypto3/copyright to AppDir/usr/share/doc/libk5crypto3/copyright 
+Copying file /usr/share/doc/libkeyutils1/copyright to AppDir/usr/share/doc/libkeyutils1/copyright 
+Copying file /usr/share/doc/libkrb5-26-heimdal/copyright to AppDir/usr/share/doc/libkrb5-26-heimdal/copyright 
+Copying file /usr/share/doc/libkrb5-3/copyright to AppDir/usr/share/doc/libkrb5-3/copyright 
+Copying file /usr/share/doc/libkrb5support0/copyright to AppDir/usr/share/doc/libkrb5support0/copyright 
+Copying file /usr/share/doc/libldap-2.4-2/copyright to AppDir/usr/share/doc/libldap-2.4-2/copyright 
+Copying file /usr/share/doc/liblz4-1/copyright to AppDir/usr/share/doc/liblz4-1/copyright 
+Copying file /usr/share/doc/liblzma5/copyright to AppDir/usr/share/doc/liblzma5/copyright 
+Copying file /usr/share/doc/libnettle6/copyright to AppDir/usr/share/doc/libnettle6/copyright 
+Copying file /usr/share/doc/libnghttp2-14/copyright to AppDir/usr/share/doc/libnghttp2-14/copyright 
+Copying file /usr/share/doc/libnspr4/copyright to AppDir/usr/share/doc/libnspr4/copyright 
+Copying file /usr/share/doc/libnss3/copyright to AppDir/usr/share/doc/libnss3/copyright 
+Copying file /usr/share/doc/libogg0/copyright to AppDir/usr/share/doc/libogg0/copyright 
+Copying file /usr/share/doc/libopenal1/copyright to AppDir/usr/share/doc/libopenal1/copyright 
+Copying file /usr/share/doc/libp11-kit0/copyright to AppDir/usr/share/doc/libp11-kit0/copyright 
+Copying file /usr/share/doc/libpsl5/copyright to AppDir/usr/share/doc/libpsl5/copyright 
+Copying file /usr/share/doc/libpulse0/copyright to AppDir/usr/share/doc/libpulse0/copyright 
+Copying file /usr/share/doc/libroken18-heimdal/copyright to AppDir/usr/share/doc/libroken18-heimdal/copyright 
+Copying file /usr/share/doc/librtmp1/copyright to AppDir/usr/share/doc/librtmp1/copyright 
+Copying file /usr/share/doc/libsasl2-2/copyright to AppDir/usr/share/doc/libsasl2-2/copyright 
+Copying file /usr/share/doc/libsdl2-2.0-0/copyright to AppDir/usr/share/doc/libsdl2-2.0-0/copyright 
+Copying file /usr/share/doc/libsndfile1/copyright to AppDir/usr/share/doc/libsndfile1/copyright 
+Copying file /usr/share/doc/libsndio6.1/copyright to AppDir/usr/share/doc/libsndio6.1/copyright 
+Copying file /usr/share/doc/libsqlite3-0/copyright to AppDir/usr/share/doc/libsqlite3-0/copyright 
+Copying file /usr/share/doc/libsystemd0/copyright to AppDir/usr/share/doc/libsystemd0/copyright 
+Copying file /usr/share/doc/libtasn1-6/copyright to AppDir/usr/share/doc/libtasn1-6/copyright 
+Copying file /usr/share/doc/libunistring2/copyright to AppDir/usr/share/doc/libunistring2/copyright 
+Copying file /usr/share/doc/libvorbis0a/copyright to AppDir/usr/share/doc/libvorbis0a/copyright 
+Copying file /usr/share/doc/libvorbisenc2/copyright to AppDir/usr/share/doc/libvorbisenc2/copyright 
+Copying file /usr/share/doc/libwayland-client0/copyright to AppDir/usr/share/doc/libwayland-client0/copyright 
+Copying file /usr/share/doc/libwayland-cursor0/copyright to AppDir/usr/share/doc/libwayland-cursor0/copyright 
+Copying file /usr/share/doc/libwayland-egl1/copyright to AppDir/usr/share/doc/libwayland-egl1/copyright 
+Copying file /usr/share/doc/libwind0-heimdal/copyright to AppDir/usr/share/doc/libwind0-heimdal/copyright 
+Copying file /usr/share/doc/libwrap0/copyright to AppDir/usr/share/doc/libwrap0/copyright 
+Copying file /usr/share/doc/libxau6/copyright to AppDir/usr/share/doc/libxau6/copyright 
+Copying file /usr/share/doc/libxcursor1/copyright to AppDir/usr/share/doc/libxcursor1/copyright 
+Copying file /usr/share/doc/libxdmcp6/copyright to AppDir/usr/share/doc/libxdmcp6/copyright 
+Copying file /usr/share/doc/libxext6/copyright to AppDir/usr/share/doc/libxext6/copyright 
+Copying file /usr/share/doc/libxfixes3/copyright to AppDir/usr/share/doc/libxfixes3/copyright 
+Copying file /usr/share/doc/libxi6/copyright to AppDir/usr/share/doc/libxi6/copyright 
+Copying file /usr/share/doc/libxinerama1/copyright to AppDir/usr/share/doc/libxinerama1/copyright 
+Copying file /usr/share/doc/libxkbcommon0/copyright to AppDir/usr/share/doc/libxkbcommon0/copyright 
+Copying file /usr/share/doc/libxrandr2/copyright to AppDir/usr/share/doc/libxrandr2/copyright 
+Copying file /usr/share/doc/libxrender1/copyright to AppDir/usr/share/doc/libxrender1/copyright 
+Copying file /usr/share/doc/libxss1/copyright to AppDir/usr/share/doc/libxss1/copyright 
+Copying file /usr/share/doc/libxxf86vm1/copyright to AppDir/usr/share/doc/libxxf86vm1/copyright 
+Calling strip on library AppDir/usr/bin/dhewm3 
+Calling strip on library AppDir/usr/lib/libFLAC.so.8 
+Calling strip on library AppDir/usr/lib/libSDL2-2.0.so.0 
+Calling strip on library AppDir/usr/lib/libXau.so.6 
+Calling strip on library AppDir/usr/lib/libXcursor.so.1 
+Calling strip on library AppDir/usr/lib/libXdmcp.so.6 
+Calling strip on library AppDir/usr/lib/libXext.so.6 
+Calling strip on library AppDir/usr/lib/libXfixes.so.3 
+Calling strip on library AppDir/usr/lib/libXi.so.6 
+Calling strip on library AppDir/usr/lib/libXinerama.so.1 
+Calling strip on library AppDir/usr/lib/libXrandr.so.2 
+Calling strip on library AppDir/usr/lib/libXrender.so.1 
+Calling strip on library AppDir/usr/lib/libXss.so.1 
+Calling strip on library AppDir/usr/lib/libXxf86vm.so.1 
+Calling strip on library AppDir/usr/lib/libasn1.so.8 
+Calling strip on library AppDir/usr/lib/libasyncns.so.0 
+Calling strip on library AppDir/usr/lib/libbsd.so.0 
+Calling strip on library AppDir/usr/lib/libcrypt.so.1 
+Calling strip on library AppDir/usr/lib/libcurl-nss.so.4 
+Calling strip on library AppDir/usr/lib/libdbus-1.so.3 
+Calling strip on library AppDir/usr/lib/libffi.so.6 
+Calling strip on library AppDir/usr/lib/libgcrypt.so.20 
+Calling strip on library AppDir/usr/lib/libgnutls.so.30 
+Calling strip on library AppDir/usr/lib/libgssapi.so.3 
+Calling strip on library AppDir/usr/lib/libgssapi_krb5.so.2 
+Calling strip on library AppDir/usr/lib/libhcrypto.so.4 
+Calling strip on library AppDir/usr/lib/libheimbase.so.1 
+Calling strip on library AppDir/usr/lib/libheimntlm.so.0 
+Calling strip on library AppDir/usr/lib/libhogweed.so.4 
+Calling strip on library AppDir/usr/lib/libhx509.so.5 
+Calling strip on library AppDir/usr/lib/libidn2.so.0 
+Calling strip on library AppDir/usr/lib/libk5crypto.so.3 
+Calling strip on library AppDir/usr/lib/libkeyutils.so.1 
+Calling strip on library AppDir/usr/lib/libkrb5.so.26 
+Calling strip on library AppDir/usr/lib/libkrb5.so.3 
+Calling strip on library AppDir/usr/lib/libkrb5support.so.0 
+Calling strip on library AppDir/usr/lib/liblber-2.4.so.2 
+Calling strip on library AppDir/usr/lib/libldap_r-2.4.so.2 
+Calling strip on library AppDir/usr/lib/liblz4.so.1 
+Calling strip on library AppDir/usr/lib/liblzma.so.5 
+Calling strip on library AppDir/usr/lib/libnettle.so.6 
+Calling strip on library AppDir/usr/lib/libnghttp2.so.14 
+Calling strip on library AppDir/usr/lib/libnsl.so.1 
+Calling strip on library AppDir/usr/lib/libnspr4.so 
+Calling strip on library AppDir/usr/lib/libnss3.so 
+Calling strip on library AppDir/usr/lib/libnssutil3.so 
+Calling strip on library AppDir/usr/lib/libogg.so.0 
+Calling strip on library AppDir/usr/lib/libopenal.so.1 
+Calling strip on library AppDir/usr/lib/libp11-kit.so.0 
+Calling strip on library AppDir/usr/lib/libplc4.so 
+Calling strip on library AppDir/usr/lib/libplds4.so 
+Calling strip on library AppDir/usr/lib/libpsl.so.5 
+Calling strip on library AppDir/usr/lib/libpulse.so.0 
+Calling strip on library AppDir/usr/lib/libpulsecommon-11.1.so 
+Calling strip on library AppDir/usr/lib/libroken.so.18 
+Calling strip on library AppDir/usr/lib/librtmp.so.1 
+Calling strip on library AppDir/usr/lib/libsasl2.so.2 
+Calling strip on library AppDir/usr/lib/libsndfile.so.1 
+Calling strip on library AppDir/usr/lib/libsndio.so.6.1 
+Calling strip on library AppDir/usr/lib/libsqlite3.so.0 
+Calling strip on library AppDir/usr/lib/libssl3.so 
+Calling strip on library AppDir/usr/lib/libsystemd.so.0 
+Calling strip on library AppDir/usr/lib/libtasn1.so.6 
+Calling strip on library AppDir/usr/lib/libunistring.so.2 
+Calling strip on library AppDir/usr/lib/libvorbis.so.0 
+Calling strip on library AppDir/usr/lib/libvorbisenc.so.2 
+Calling strip on library AppDir/usr/lib/libwayland-client.so.0 
+Calling strip on library AppDir/usr/lib/libwayland-cursor.so.0 
+Calling strip on library AppDir/usr/lib/libwayland-egl.so.1 
+Calling strip on library AppDir/usr/lib/libwind.so.0 
+Calling strip on library AppDir/usr/lib/libwrap.so.0 
+Calling strip on library AppDir/usr/lib/libxkbcommon.so.0 
+Setting rpath in ELF file AppDir/usr/bin/base.so to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/d3xp.so to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/dhewm3 to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/lib/libFLAC.so.8 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libSDL2-2.0.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXau.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXcursor.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXdmcp.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXext.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXfixes.so.3 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXi.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXinerama.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXrandr.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXrender.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXss.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXxf86vm.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libasn1.so.8 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libasyncns.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libbsd.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libcrypt.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libcurl-nss.so.4 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libdbus-1.so.3 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libffi.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libgcrypt.so.20 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libgnutls.so.30 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libgssapi.so.3 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libgssapi_krb5.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libhcrypto.so.4 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libheimbase.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libheimntlm.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libhogweed.so.4 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libhx509.so.5 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libidn2.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libk5crypto.so.3 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libkeyutils.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libkrb5.so.26 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libkrb5.so.3 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libkrb5support.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/liblber-2.4.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libldap_r-2.4.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/liblz4.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/liblzma.so.5 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libnettle.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libnghttp2.so.14 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libnsl.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libnspr4.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libnss3.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libnssutil3.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libogg.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libopenal.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libp11-kit.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libplc4.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libplds4.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libpsl.so.5 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libpulse.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libpulsecommon-11.1.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libroken.so.18 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/librtmp.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libsasl2.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libsndfile.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libsndio.so.6.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libsqlite3.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libssl3.so to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libsystemd.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libtasn1.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libunistring.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libvorbis.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libvorbisenc.so.2 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libwayland-client.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libwayland-cursor.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libwayland-egl.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libwind.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libwrap.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libxkbcommon.so.0 to $ORIGIN 
+
+-- Deploying icons -- 
+Deploying icon AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png 
+WARNING: Could not find copyright files for file AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png using dpkg-query 
+
+-- Deploying desktop files -- 
+Deploying desktop file AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop 
+
+-- Copying files into AppDir -- 
+Copying file AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop to AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop 
+Copying file AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png to AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png 
+
+-- Deploying files into AppDir root directory -- 
+Deploying files to AppDir root using desktop file: AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop 
+Deploying desktop file to AppDir root: AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop 
+Creating symlink for file AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop in/as AppDir 
+Deploying icon to AppDir root: AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png 
+Creating symlink for file AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png in/as AppDir 
+Deploying AppRun symlink for executable in AppDir root: AppDir/usr/bin/dhewm3 
+Creating symlink for file AppDir/usr/bin/dhewm3 in/as AppDir/AppRun 
+
+-- Running output plugin: appimage -- 
+[appimage/stdout] Found appimagetool: /tmp/.mount_linuxd4sCZHd/plugins/linuxdeploy-plugin-appimage/usr/bin/appimagetool
+[appimage/stdout] 
+[appimage/stderr] Warning: please use $LDAI_SIGN instead of $SIGN
+[appimage/stderr] Running command: /tmp/.mount_linuxd4sCZHd/plugins/linuxdeploy-plugin-appimage/usr/bin/appimagetool "AppDir" "-s"
+[appimage/stderr] 
+[appimage/stdout] WARNING: appstreamcli command is missing, please install it if you want to use AppStream metadata
+[appimage/stderr] appimagetool, continuous build (commit 5735cc5), build <local dev build> built on 2023-03-08 22:52:04 UTC
+[appimage/stderr] Using architecture x86_64
+[appimage/stderr] Deleting pre-existing .DirIcon
+[appimage/stderr] Creating .DirIcon symlink based on information from desktop file
+[appimage/stderr] AppStream upstream metadata found in usr/share/metainfo/org.dhewm3.Dhewm3.appdata.xml
+[appimage/stderr] Generating squashfs...
+[appimage/stderr] Embedding ELF...
+[appimage/stdout] Parallel mksquashfs: Using 4 processors
+[appimage/stdout] Creating 4.0 filesystem on Dhewm3-x86_64.AppImage, block size 131072.
+[appimage/stdout] [===============================================================\] 781/781 100%
+[appimage/stdout] 
+[appimage/stdout] Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+[appimage/stdout] 	compressed data, compressed metadata, compressed fragments,
+[appimage/stdout] 	compressed xattrs, compressed ids
+[appimage/stdout] 	duplicates are removed
+[appimage/stdout] Filesystem size 33298.64 Kbytes (32.52 Mbytes)
+[appimage/stdout] 	38.40% of uncompressed filesystem size (86724.67 Kbytes)
+[appimage/stdout] Inode table size 4135 bytes (4.04 Kbytes)
+[appimage/stdout] 	40.24% of uncompressed inode table size (10277 bytes)
+[appimage/stdout] Directory table size 2119 bytes (2.07 Kbytes)
+[appimage/stdout] 	38.48% of uncompressed directory table size (5507 bytes)
+[appimage/stdout] Number of duplicate files found 15
+[appimage/stdout] Number of inodes 233
+[appimage/stdout] Number of files 143
+[appimage/stdout] Number of fragments 24
+[appimage/stdout] Number of symbolic links  4
+[appimage/stdout] Number of device nodes 0
+[appimage/stdout] Number of fifo nodes 0
+[appimage/stdout] Number of socket nodes 0
+[appimage/stdout] Number of directories 86
+[appimage/stdout] Number of ids (unique uids + gids) 1
+[appimage/stdout] Number of uids 1
+[appimage/stdout] 	root (0)
+[appimage/stdout] Number of gids 1
+[appimage/stdout] 	root (0)
+[appimage/stderr] Marking the AppImage as executable...
+[appimage/stderr] Embedding MD5 digest
+[appimage/stderr] [sign] signing requested
+[appimage/stderr] [sign] found gpgme version 1.17.1
+[appimage/stderr] [sign] found gcrypt version 1.10.1
+[appimage/stderr] [sign] calculated digest: 77c64ec77c53fda7e0f47560732e56a355591ef8f9218e71e4e96a5a21a67de6
+[appimage/stderr] [sign] using engine OpenPGP (found in /usr/bin/gpg), version 2.2.4, gpgme requires at least version 1.4.0
+[appimage/stderr] [sign] using key with fingerprint 22597310B903C099BF99768ED1B5B78AC4A5311C, issuer name Alexander Pavlov
+[appimage/stdout] /home/jcryton/AppImage/dhewm3-appimage/AppDir should be packaged as Dhewm3-x86_64.AppImage
+[appimage/stderr] [sign] signed using pubkey algo RSA, hash algo SHA512, key fingerprint 6E9137E3B0FE3FDC67D70F2ECDC41982C027BAAA
+[appimage/stderr] [sign] embedding signature in AppImage
+[appimage/stderr] [sign] embedding key in AppImage
+[appimage/stderr] Success
+[appimage/stderr] 
+[appimage/stderr] Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+[appimage/stderr] central directory of available AppImages, by opening a pull request
+[appimage/stderr] at https://github.com/AppImage/appimage.github.io
