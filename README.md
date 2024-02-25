@@ -1,7 +1,7 @@
 dhewm3-appimage
 ---------------
 [![Build status](https://github.com/tx00100xt/dhewm3-appimage/actions/workflows/cibuild.yml/badge.svg)](https://github.com/tx00100xt//dhewm3-appimage/actions/)
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/tx00100xt/dhewm3-appimage)](https://github.com/tx00100xt/dhewm3-appimage/releases/tag/1.3.5rc1)
 [![Github downloads](https://img.shields.io/github/downloads/tx00100xt/dhewm3-appimage/total.svg?logo=github&logoColor=white&style=flat-square&color=E75776)](https://github.com/tx00100xt/dhewm3-appimage/releases/)
 
