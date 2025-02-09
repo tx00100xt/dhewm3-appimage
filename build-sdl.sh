@@ -25,10 +25,11 @@ cd ..
 cp -fr dhewm3/neo/build/dhewm3 AppDir/usr/bin
 cp -fr dhewm3/neo/build/base.so AppDir/usr/bin
 cp -fr dhewm3/neo/build/d3xp.so AppDir/usr/bin
+cp -fr Img/dhewm3.bmp AppDir/usr/bin
 
 # create appimage
 SIGN=1 ./linuxdeploy-x86_64.AppImage --executable AppDir/usr/bin/dhewm3 --desktop-file AppDir/usr/share/applications/org.dhewm3.Dhewm3.desktop --icon-file AppDir/usr/share/icons/hicolor/128x128/apps/org.dhewm3.Dhewm3.png --appdir AppDir --output appimage
 
 # rename appimage
-mv Dhewm3-x86_64.AppImage Dhewm3-1.5.3rc1-x86_64.AppImage
-chmod +x Dhewm3-1.5.3rc1-x86_64.AppImage
+mv Dhewm3-x86_64.AppImage Dhewm3-1.5.5pre-x86_64.AppImage
+chmod +x Dhewm3-1.5.5pre-x86_64.AppImage

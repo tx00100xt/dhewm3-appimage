@@ -1,0 +1,81 @@
+--- a/neo/CMakeLists.txt	2025-02-09 17:28:04.456849400 +0300
++++ b/neo/CMakeLists.txt	2025-02-09 17:28:17.056849413 +0300
+@@ -616,6 +616,7 @@
+ add_globbed_headers(src_renderer "renderer")
+ 
+ set(src_framework
++	framework/appimage.c
+ 	framework/CVarSystem.cpp
+ 	framework/CmdSystem.cpp
+ 	framework/Common.cpp
+@@ -1283,7 +1283,7 @@
+ 	set_target_properties(${DHEWM3BINARY} PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${PROJECT_SOURCE_DIR}/sys/osx/Info.plist)
+ 
+ 	target_link_libraries(${DHEWM3BINARY}
+-		idlib
++		idlib -lGL -lGLEW -lSDL2_image
+ 		${OPENAL_LIBRARY}
+ 		${CURL_LIBRARY}
+ 		${SDLx_LIBRARY}
+--- a/neo/framework/Common.cpp	2024-02-23 01:01:11.254605383 +0300
++++ b/neo/framework/Common.cpp	2024-02-23 00:57:15.793467324 +0300
+@@ -28,6 +28,12 @@
+ 
+ #include "sys/sys_sdl.h"
+ 
++extern "C" __attribute__ ((visibility("default"))) void 	sprExit(void);
++extern "C" __attribute__ ((visibility("default"))) void 	shpExit(void);
++extern "C" __attribute__ ((visibility("default"))) void 	appCreate(int, int);
++extern "C" __attribute__ ((visibility("default"))) void 	appRun(void);
++extern "C" __attribute__ ((visibility("default"))) void 	appExit(void);
++
+ #if SDL_VERSION_ATLEAST(3, 0, 0)
+   // DG: compat with SDL2
+   #define SDL_setenv SDL_setenv_unsafe
+@@ -2935,6 +2941,29 @@
+ 
+ #endif // UINTPTR_MAX defined
+ 
++#include <unistd.h>
++#include <pwd.h>
++#include "appimage.h"
++
++static int AppImage_TestFile(const char *_home_TestFile)
++{
++	char _fnm_home_TestFile[4096];
++	struct passwd *pw = getpwuid(getuid());
++	const char *_homedir = pw->pw_dir;
++	strcpy(_fnm_home_TestFile, _homedir);
++	_fnm_home_TestFile[strlen(_homedir)] = 0x00;
++	strncat (_fnm_home_TestFile, _home_TestFile, strlen(_home_TestFile));
++	printf("Test file: %s\n", (const char *) _fnm_home_TestFile);
++	if( access((const char *) _fnm_home_TestFile, F_OK) == 0 ) {
++		printf("Found path: %s\n", (const char *) _fnm_home_TestFile);
++		return 1;
++	} else {
++		printf("ERROR: Game data not found!\n");
++		return 0;
++	}
++ 	return 1;
++}
++
+ /*
+ =================
+ idCommonLocal::Init
+@@ -2948,6 +2977,16 @@
+ 		           (int)D3_SIZEOFPTR, (int)sizeof(void*) );
+ 	}
+ 
++	int appimage_test_pak0 = AppImage_TestFile("/.local/share/dhewm3/base/pak000.pk4");
++	if( appimage_test_pak0 == 0 ) {
++		appCreate(1280, 720);
++		appRun();
++		shpExit();
++		sprExit();
++		appExit();
++		exit(1);
++	}
++
+ 	if(checkForHelp(argc, argv))
+ 	{
+ 		// game has been started with --help (or similar), usage message has been shown => quit
