@@ -53,7 +53,7 @@ jobs:
         run: |
           cd ${{github.workspace}}
           ./build-ogl.sh
-          mv -f ${{github.workspace}}/Dhewm3-1.5.3rc1-x86_64.AppImage Dhewm3-${{ steps.date.outputs.time }}-1.5.5pre-x86_64.AppImage
+          mv -f ${{github.workspace}}/Dhewm3-1.5.5pre-x86_64.AppImage Dhewm3-${{ steps.date.outputs.time }}-1.5.5pre-x86_64.AppImage
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
